@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+.divItem{
+    background-color: blue;
+}
+
+#item2{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
+
+.makeVisible{
+    display: none;
+}
+
+
+    */
+/*     
+.cardItem{
+    padding: 20px;
+    border: 1px solid gray;
+}  */
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.changeVisiblity{
+    display: none;
+}
