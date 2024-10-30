@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    padding: 20px;   
+}
+
+.userItem{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow:  0 0 10px 5px lightgrey;
+    height: 80px;
+    padding: 20px;
+}
+
+.card{
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    box-shadow:  0 0 10px 5px lightgrey;
+    background-color: aquamarine;
+    color: red;
+}
+
+p{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
