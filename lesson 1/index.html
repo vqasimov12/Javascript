@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="./index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
     <title>Document</title>
 </head>
-<body>
-    
+<body class="max-w-[1440px] max-h-[1047px] bg-white flex items-center justify-center min-h-screen">
+
+    <div class="max-w-[1304px] max-h-[781px] p-8 gap-8 rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2 items-center">
+
+        <!-- Sol Teref  -->
+        <div id="image" class="max-w-[919px] max-h-[706px] flex justify-center mt-20 ">
+            <img class="max-w-[805px] h-auto" src="https://s3-alpha-sig.figma.com/img/75f3/94c0/a1c7dc5b68a42239311e510f54d8cd59?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qgVqGyTrtAwgXM6WM8rsoQt2b9Z3T3LggfpArevSDXb-IA2JfkNJI-Z~pEPsZe-~7slErM12n9kA0EdC8Rhd3IUTpf6WC1eBA5sW4zzNXfN5k5h4iQOlWZCbjADMR3jLgsBeoWHor3l6EuMvxACWmAYW7QTGEg0DFkPEkZJghFjRpCqU6bIYL33hArCH0vKlqCmBhFi55QqOKAm0aYesbof~y4VpxFa2vmv4-a1toQHensNo4Oy60NBWSex-FdrdGIEe6rkFfddQW-1YiCIToocs~lMka6vzBWV-0xQF6YbsFsjfMaEj9LCC6by-we0yKoZ0L2PGA8awki2G9hYCYw__" alt="">
+        </div>
+
+        <!-- Sağ Teref  -->
+        <div id="form" class="flex flex-col p-8 rounded-lg bg-white ml-20 bg-white " >
+            <h2 class="text-2xl font-bold text-black mb-2">Log in to Exclusive</h2>
+            <p class="text-sm text-black mb-6">Enter your details below</p>
+
+            <form class="space-y-4">    
+                <!-- Email -->
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email"
+                    class="mt-1 block w-full p-2 border-b border-gray-300  shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+
+                <!-- Parol -->
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Password"
+                    class="mt-1 block w-full p-2 border-b border-gray-300  shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                </div>
+
+                <button id="btn"
+                class="w-full bg-red-500 text-white py-2 rounded-md shadow-md hover:bg-red-700 transition">
+                    Login
+                </button>
+
+                <!-- Alt teref -->
+                <p class="text-sm text-gray-500 mt-6 text-center">Don't have an account?
+                    <a href="#" class="text-black font-medium hover:underline">Register</a>
+                </p>
+            </form>
+        </div>
+
+    </div>
+<script src="./index.js"></script>
 </body>
 </html>
